@@ -10,9 +10,7 @@
       text-align: center;
       padding: 20px;
     }
-    input {
-      width: 80%;
-      padding: 8px;
+    input[type="file"] {
       margin: 10px 0;
     }
     canvas {
@@ -36,9 +34,7 @@
 </head>
 <body>
   <h2>🎬 3 Image Thumbnail Generator</h2>
-  <input type="text" id="img1" placeholder="Enter Image URL 1">
-  <input type="text" id="img2" placeholder="Enter Image URL 2">
-  <input type="text" id="img3" placeholder="Enter Image URL 3">
+  <input type="file" id="imageUploader" accept="image/*" multiple>
   <br>
   <button onclick="generateThumbnail()">Generate Thumbnail</button>
   <br>
@@ -46,41 +42,33 @@
   <br>
   <button onclick="downloadThumbnail()">Download</button>  <script>
     function generateThumbnail() {
-      const urls = [
-        document.getElementById('img1').value,
-        document.getElementById('img2').value,
-        document.getElementById('img3').value
-      ];
-
+      const files = document.getElementById('imageUploader').files;
       const canvas = document.getElementById('thumbCanvas');
       const ctx = canvas.getContext('2d');
-
       ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      if (files.length !== 3) {
+        alert("Please upload exactly 3 images.");
+        return;
+      }
 
       const width = canvas.width / 3;
       const height = canvas.height;
 
       let loadedImages = 0;
-
-      urls.forEach((url, index) => {
-        const img = new Image();
-        img.crossOrigin = "anonymous";
-        img.onload = function () {
-          ctx.drawImage(img, index * width, 0, width, height);
-          loadedImages++;
-          if (loadedImages === 3) {
-            console.log("All images drawn");
+      for (let i = 0; i < 3; i++) {
+        const file = files[i];
+        const reader = new FileReader();
+        reader.onload = function (event) {
+          const img = new Image();
+          img.onload = function () {
+            ctx.drawImage(img, i * width, 0, width, height);
+            loadedImages++;
           }
+          img.src = event.target.result;
         }
-        img.onerror = function () {
-          ctx.fillStyle = '#ddd';
-          ctx.fillRect(index * width, 0, width, height);
-          ctx.fillStyle = '#888';
-          ctx.fillText("Image not loaded", index * width + 20, height / 2);
-          loadedImages++;
-        }
-        img.src = url;
-      });
+        reader.readAsDataURL(file);
+      }
     }
 
     function downloadThumbnail() {
