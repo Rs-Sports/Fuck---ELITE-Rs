@@ -1,525 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <title>Elite Corporation</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3 Image Thumbnail Generator</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f2f2f2;
+      text-align: center;
+      padding: 20px;
+    }
+    input {
+      width: 80%;
+      padding: 8px;
+      margin: 10px 0;
+    }
+    canvas {
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      max-width: 100%;
+    }
+    button {
+      padding: 10px 20px;
+      margin-top: 15px;
+      cursor: pointer;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
- <!-- ==================== Header ========================= -->
-
- <header id="header">
-  <div class="container">
-    <div class="left">
-      <h4> 👉👌 FUCK By RS- ELITE SITE </h4>
-    </div>
-    <div class="right">
-      <form action="">
-      <input type="text" placeholder="Search for Products">
-      <div class="dropdown">
-        <p>Select Category
-          <ul>
-            <li><a href="">Green Coffee</a></li>
-            <li><a href="">Weight Gain</a></li>
-            <li><a href="">Love Forever</a></li>
-          </ul>
-        </p>
-       
-      </div>
-      <button type="submit">
-        <i class="fas fa-search"></i>
-      </button>
-    </form>
-
-    </div>
-  </div>
- </header>
-
- <!-- ==================== Nav ========================= -->
-
- <nav>
-  <div class="container">
-    <div class="left" id="navLinks">
-      <ul>
-        <i class="fas fa-times" onclick="hideMenu()"></i>
-        <li><a href="" id="first">Home</a></li>
-        <li><a href="product.html">Products</a></li>
-        <li><a href="about.html">About us</a></li>
-        <li><a href="au.html">Authentication</a></li>
-      </ul>
-    </div>
-    <i class="fas fa-bars" onclick="showMenu()"></i>
-      
-    <div class="right">
-      <i class="fab fa-facebook"></i>
-    </div>
-  </div>
- </nav>
-
-
- <!-- ======================== Banner ========================= -->
- 
- <section class="banner_part">
-  <div class="container">
-    <div class="banner_slider">
-      <div class="banner one">
-        <img src="./img/banner1.png" alt="">
-      </div>
-      <div class="banner two">
-        <img src="./img/banner2.png" alt="">
-
-      </div>
-      <div class="banner three">
-        <img src="./img/banner3.png" alt="">
-
-      </div>
-    </div>
-  </div>
- </section>
- <a href="#header">
-  <i class="fas fa-chevron-up"></i>
- </a>
-
-
-  <!-- ========================= Check ============================== -->
- <section class="check">
-  <div class="container">
-    <h1>আপনার প্রোডাক্টটি অরিজিনাল কিনা চেক করুন</h1>
-<p>আপনার হাতে থাকা প্রোডাক্টটির পিছনে দেয়া<br>
-  ৮ ডিজিটের সিকিউরিটি কোডটি এখানে লিখুন।</p>
-  <!-- ============= -->
-  <form name="myForm" style="margin: 10px;" onsubmit=" return valid()">
-    <input type="text" name="num" class="numb"><br><br>
-    <input type="submit" value="Submit" class="submit">
- </form>
- <!-- <div id="demo"></div> -->
-  <!-- ============= -->
-
-  <p id="demo">বিঃ দ্রঃ কোডটি শুধু মাত্র একবারই ব্যবহার করতে পারবেন,<br>
-    কোডটি পূর্বে ব্যবহৃত হয়ে গেলে তা মেয়াদ উত্তীর্ণ দেখাবে।
-     
-  </p>
-  <img src="" alt="">
-  </div>
- 
-</section>
- 
-
- <!-- ======================== Our Product ========================= -->
-
- <section class="product_part">
-  <div class="container">
-    <h3>Our Products</h3>
-    <hr>
-    <div class="product">
-
-      <div class="p">
-        <img src="https://imgur.com/VgAAF8S.jpeg" alt="">
-        <h6>Milk Shake (মিল্ক শেক)</h6>
-        <p>Supplement</p>
-        <p class="holud">Fuck ৳</p>
-        <p class="natok">কোনো পার্শ্বপ্রতিক্রিয়া নাই। এটি (BCSIR) ল্যাব থেকে পরিক্ষিত এবং অনুমোদিত।</p>
-
-      </div>
-    
-    <div class="p">
-      <img src="https://imgur.com/VgAAF8S.jpeg" alt="">
-      <h6>Natural Food Badam Shake
-      </h6>
-      <p>Supplement</p>
-      <p class="holud">Fuck৳</p>
-      <p class="natok">কোনো পার্শ্বপ্রতিক্রিয়া নাই। এটি (BCSIR) ল্যাব থেকে পরিক্ষিত এবং অনুমোদিত।</p>
-
-    </div>
-    <div class="p">
-      <img src="https://imgur.com/VgAAF8S.jpeg" alt="">
-      <h6>Milk Shake (মিল্ক শেক)</h6>
-      <p>Supplement</p>
-      <p class="holud">Fuck ৳</p>
-      <p class="natok">কোনো পার্শ্বপ্রতিক্রিয়া নাই। এটি (BCSIR) ল্যাব থেকে পরিক্ষিত এবং অনুমোদিত।</p>
-      <div class="discount">
-        <p>-20%</p>
-      </div>
-
-    </div>
-    <div class="p">
-      <img src="https://imgur.com/VgAAF8S.jpeg" alt="">
-      <h6>Beauty Pearl (Total Beauty Solution)</h6>
-      <p>Beauty & Cosmetics Supplement</p>
-      <p class="holud">Fuck ৳</p>
-      <p class="natok">কোনো পার্শ্বপ্রতিক্রিয়া নাই। এটি (BCSIR) ল্যাব থেকে পরিক্ষিত এবং অনুমোদিত।</p>
-      <div class="discount">
-        <p>-27%</p>
-      </div>
-
-    </div>
-
-
-    </div>
-
-    
-    <div class="product">
-
-      <div class="p">
-        <img src="https://imgur.com/VgAAF8S.jpeg" alt="">
-        <h6>Vita Protein</h6>
-        <p>Supplement</p>
-        <p class="holud">Fuck ৳</p>
-        <div class="discount">
-          <p>-19%</p>
-        </div>
-        <p class="natok">কোনো পার্শ্বপ্রতিক্রিয়া নাই। এটি (BCSIR) ল্যাব থেকে পরিক্ষিত এবং অনুমোদিত।</p>
-
-      </div>
-    
-    <div class="p">
-      <img src="https://imgur.com/VgAAF8S.jpeg" alt="">
-      <h6>Keto Green Coffee</h6>
-      <p>Supplement</p>
-      <p class="holud">Fuck ৳</p>
-      <p class="natok">কোনো পার্শ্বপ্রতিক্রিয়া নাই। এটি (BCSIR) ল্যাব থেকে পরিক্ষিত এবং অনুমোদিত।</p>
-
-    </div>
-    <div class="p">
-      <img src="https://imgur.com/VgAAF8S.jpeg" alt="">
-      <h6>Healthy Plus</h6>
-      <p>Supplement</p>
-      <p class="holud">Fuck ৳</p>
-      <p class="natok">কোনো পার্শ্বপ্রতিক্রিয়া নাই। এটি (BCSIR) ল্যাব থেকে পরিক্ষিত এবং অনুমোদিত।</p>
-       
-
-    </div>
-    <div class="p">
-      <img src="./img/product8.jpg" alt="">
-      <h6>Nano Slimming Juice</h6>
-      <p>Supplement</p>
-      <p class="holud">Fuck ৳</p>
-      <p class="natok">কোনো পার্শ্বপ্রতিক্রিয়া নাই। এটি (BCSIR) ল্যাব থেকে পরিক্ষিত এবং অনুমোদিত।</p>
-       
-
-    </div>
-
-
-    </div>
-    
-    <div class="product">
-
-      <div class="p">
-        <img src="./img/product9.jpg" alt="">
-        <h6>Badam Shake</h6>
-        <p>Supplement</p>
-        <p class="holud">1200 ৳</p>
-        <p class="natok">কোনো পার্শ্বপ্রতিক্রিয়া নাই। এটি (BCSIR) ল্যাব থেকে পরিক্ষিত এবং অনুমোদিত।</p>
-
-      </div>
-    
-    <div class="p">
-      <img src="./img/p10.jpeg" alt="">
-      <h6>Hight Develop Supplement</h6>
-      <p>Supplement</p>
-      <p class="holud">1600.00 ৳</p>
-      <p class="natok">কোনো পার্শ্বপ্রতিক্রিয়া নাই। এটি (BCSIR) ল্যাব থেকে পরিক্ষিত এবং অনুমোদিত।</p>
-
-    </div>
-    <div class="p">
-      <img src="./img/product10.jpg" alt="">
-      <h6>Lemon Juice(লেমন জুস)</h6>
-      <p>Supplement</p>
-      <p class="holud">1250</p>
-      <p class="natok">কোনো পার্শ্বপ্রতিক্রিয়া নাই। এটি (BCSIR) ল্যাব থেকে পরিক্ষিত এবং অনুমোদিত।</p>
-      <div class="discount">
-        <p>-21%</p>
-      </div>
-
-    </div>
-    <div class="p">
-      <img src="./img/product11.jpg" alt="">
-      <h6>Chocolate Shake (চকলেট শেক)</h6>
-      <p>Supplement</p>
-      <p class="holud">1000 ৳</p>
-      <p class="natok">কোনো পার্শ্বপ্রতিক্রিয়া নাই। এটি (BCSIR) ল্যাব থেকে পরিক্ষিত এবং অনুমোদিত।</p>
-       
-
-    </div>
-
-
-    </div>
-     
-     <div class="product">
-
-      <div class="p">
-        <img src="./img/product13.jpg" alt="">
-        <h6>Premium Nutrition</h6>
-        <p>Supplement</p>
-        <p class="holud">1400 ৳</p>
-        <p class="natok">কোনো পার্শ্বপ্রতিক্রিয়া নাই। এটি (BCSIR) ল্যাব থেকে পরিক্ষিত এবং অনুমোদিত।</p>
-
-      </div>
-    
-    <div class="p">
-      <img src="./img/p14.jpg" alt="">
-      <h6>Piles Cure</h6>
-      <p>Supplement</p>
-      <p class="holud">1500.00 ৳</p>
-      <p class="natok">কোনো পার্শ্বপ্রতিক্রিয়া নাই। এটি (BCSIR) ল্যাব থেকে পরিক্ষিত এবং অনুমোদিত।</p>
-
-    </div>
-    <div class="p">
-      <img src="./img/p15.jpeg" alt="">
-      <h6>Saffron Coffe</h6>
-      <p>Supplement</p>
-      <p class="holud">1,990 ৳</p>
-      <p class="natok">কোনো পার্শ্বপ্রতিক্রিয়া নাই। এটি (BCSIR) ল্যাব থেকে পরিক্ষিত এবং অনুমোদিত।</p>
-       
-
-    </div>
-    <div class="p">
-      <img src="./img/p16.jpg" alt="">
-      <h6>Saffron Love Forever (Power Source)</h6>
-      <p>Supplement</p>
-      <p class="holud">1,990.00 ৳</p>
-      <p class="natok">কোনো পার্শ্বপ্রতিক্রিয়া নাই। এটি (BCSIR) ল্যাব থেকে পরিক্ষিত এবং অনুমোদিত।</p>
-       
-
-    </div>
-
-
-    </div>
-   
-     <div class="product">
-
-      <div class="p">
-        <img src="./img/p17.jpg" alt="">
-        <h6>Saffron Time Develop (Love Forever)</h6>
-        <p>Supplement</p>
-        <p class="holud">1,990.00 ৳</p>
-        <p class="natok">কোনো পার্শ্বপ্রতিক্রিয়া নাই। এটি (BCSIR) ল্যাব থেকে পরিক্ষিত এবং অনুমোদিত।</p>
-
-      </div>
-    
-    <div class="p">
-      <img src="./img/p18.jpeg" alt="">
-      <h6>Weight Gain</h6>
-      <p>Supplement</p>
-      <p class="holud">3,900.00 ৳</p>
-      <p class="natok">কোনো পার্শ্বপ্রতিক্রিয়া নাই। এটি (BCSIR) ল্যাব থেকে পরিক্ষিত এবং অনুমোদিত।</p>
-      <div class="discount">
-        <p>-25%</p>
-      </div>
-
-    </div>
-    <div class="p">
-      <img src="./img/p19.jpeg" alt="">
-      <h6>Weight Gain Fitness Growth Supplement</h6>
-      <p>Supplement</p>
-      <p class="holud">1,990 ৳</p>
-      <p class="natok">কোনো পার্শ্বপ্রতিক্রিয়া নাই। এটি (BCSIR) ল্যাব থেকে পরিক্ষিত এবং অনুমোদিত।</p>
-       
-
-    </div>
-    <div class="p">
-      <img src="./img/p20.jpg" alt="">
-      <h6>Weight Gain Milk Shake Supplement</h6>
-      <p>Supplement</p>
-      <p class="holud">1,990.00 ৳</p>
-      <p class="natok">কোনো পার্শ্বপ্রতিক্রিয়া নাই। এটি (BCSIR) ল্যাব থেকে পরিক্ষিত এবং অনুমোদিত।</p>
-       
-
-    </div>
-
-
-    </div>
-
-    
-    <div class="product">
-
-      <div class="p">
-        <img src="./img/p21.jpeg" alt="">
-        <h6>Weight Gain Premium Nutrition Supplement</h6>
-        <p>Supplement</p>
-        <p class="holud">1,990.00 ৳</p>
-        <p class="natok">কোনো পার্শ্বপ্রতিক্রিয়া নাই। এটি (BCSIR) ল্যাব থেকে পরিক্ষিত এবং অনুমোদিত।</p>
-
-      </div>
-    
-    <div class="p">
-      <img src="./img/p22.jpg" alt="">
-      <h6>Weight Loss (Get Slim Stay Slim)</h6>
-      <p>Supplement</p>
-      <p class="holud">3,400.00 ৳</p>
-      <p class="natok">কোনো পার্শ্বপ্রতিক্রিয়া নাই। এটি (BCSIR) ল্যাব থেকে পরিক্ষিত এবং অনুমোদিত।</p>
-
-    </div>
-    <div class="p">
-      <img src="./img/p23.jpg" alt="">
-      <h6>Weight Loss (Get Slim Stay Slim)</h6>
-      <p>Supplement</p>
-      <p class="holud">1,990 ৳</p>
-      <p class="natok">কোনো পার্শ্বপ্রতিক্রিয়া নাই। এটি (BCSIR) ল্যাব থেকে পরিক্ষিত এবং অনুমোদিত।</p>
-       
-
-    </div>
-    <div class="p">
-      <img src="./img/p24.jpg" alt="">
-      <h6>Weight Loss Daily Loss Slimming Powder</h6>
-      <p>Supplement</p>
-      <p class="holud">1,990.00 ৳</p>
-      <p class="natok">কোনো পার্শ্বপ্রতিক্রিয়া নাই। এটি (BCSIR) ল্যাব থেকে পরিক্ষিত এবং অনুমোদিত।</p>
-      <div class="discount">
-        <p>-25%</p>
-      </div>
-
-    </div>
-
-
-    </div>
-
-   
-     <div class="product">
-
-      <div class="p">
-        <img src="./img/p25.jpg" alt="">
-        <h6>Weight Loss Natural Slimming</h6>
-        <p>Supplement</p>
-        <p class="holud">1,500.00 ৳</p>
-        <p class="natok">কোনো পার্শ্বপ্রতিক্রিয়া নাই। এটি (BCSIR) ল্যাব থেকে পরিক্ষিত এবং অনুমোদিত।</p>
-
-      </div>
-    
-    <div class="p">
-      <img src="./img/p26.jpg" alt="">
-      <h6>Women’s V Tight</h6>
-      <p>Supplement</p>
-      <p class="holud">2800.00 ৳</p>
-      <p class="natok">কোনো পার্শ্বপ্রতিক্রিয়া নাই। এটি (BCSIR) ল্যাব থেকে পরিক্ষিত এবং অনুমোদিত।</p>
-
-    </div>
-    <div class="p">
-      <img src="./img/p27.jpg" alt="">
-      <h6>Zero Pain</h6>
-      <p>Supplement</p>
-      <p class="holud">1,990 ৳</p>
-      <p class="natok">কোনো পার্শ্বপ্রতিক্রিয়া নাই। এটি (BCSIR) ল্যাব থেকে পরিক্ষিত এবং অনুমোদিত।</p>
-      <div class="discount">
-        <p>-25%</p>
-      </div>
-
-    </div>
-    <div class="p">
-      <img src="./img/product2.jpg" alt="">
-      <h6>Natural Food Badam Shake</h6>
-      <p>Supplement</p>
-      <p class="holud">1200 ৳</p>
-      <p class="natok">কোনো পার্শ্বপ্রতিক্রিয়া নাই। এটি (BCSIR) ল্যাব থেকে পরিক্ষিত এবং অনুমোদিত।</p>
-      <div class="discount">
-        <p>-25%</p>
-      </div>
-
-    </div>
-
-
-    </div>
-  </div>
-  <hr>
- </section>  
- 
-      
-     
-     
- <!-- ======================== Buy ========================= -->
-
- <section class="buy">
-  <div class="container">
-    <h3>You Can Visit</h3>
-    <div class="items">
-
-      <div class="item">
-        <h5>Women's Clothing</h5>
-        <img src="./img/b1.jpg" alt="">
-      </div>
-      <div class="item">
-        <h5>Kids Clothing</h5>
-        <img src="./img/b2.jpg" alt="">
-      </div>
-
-      <div class="item">
-        <h5>Bags & Luggage</h5>
-        <img src="./img/b3.jpg" alt="">
-      </div>
-
-      <div class="item">
-        <h5>Men's Clothing</h5>
-        <img src="./img/b4.jpg" alt="">
-      </div>
-
-      <div class="item">
-        <h5>Shoes</h5>
-        <img src="./img/b5.png" alt="">
-      </div>
-
-
-    </div>
-  </div>
- </section>
-
-
-
- <!-- ======================== Footer ========================= -->
-
- <footer>
-  <div class="container">
-    <div class="footer_part">
-      <div class="a">
-        <h4>Elite Corporation</h4>
-      </div>
-      <div class="a">
-        <h6>Important Pages</h6>
-        <ul>
-          <li><a href="">Privacy Policy</a></li>
-          <li><a href="">Terms & Conditions</a></li>
-          <li><a href="">Return Policy</a></li>
-        </ul>
-      </div>
-      <div class="a">
-        <h6>Quick Links</h6>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Products</a></li>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Contact Us</a></li>
-        </ul>
-      </div>
-      <div class="a">
-        <h6>Social Links</h6>
-        <ul>
-          <li><a href="">
-            <i class="fab fa-facebook"></i>
-          </a></li>
-           
-        </ul>
-      </div>
-    </div>
-  </div>
-  
-  <p class="footer_p">
-    Elitcorporationbd  2023 CREATED BY Systemeye Technologies Ltd. PREMIUM DIGITAL MARKETING SOLUTIONS.
-  </p>
-
-     
- </footer>
-    
-
-    <!-- =========================== Script =========================== -->
-    <script src="js/jquery-1.12.4.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/script.js"></script>
-</body>
+  <h2>🎬 3 Image Thumbnail Generator</h2>
+  <input type="text" id="img1" placeholder="Enter Image URL 1">
+  <input type="text" id="img2" placeholder="Enter Image URL 2">
+  <input type="text" id="img3" placeholder="Enter Image URL 3">
+  <br>
+  <button onclick="generateThumbnail()">Generate Thumbnail</button>
+  <br>
+  <canvas id="thumbCanvas" width="960" height="540"></canvas>
+  <br>
+  <button onclick="downloadThumbnail()">Download</button>  <script>
+    function generateThumbnail() {
+      const urls = [
+        document.getElementById('img1').value,
+        document.getElementById('img2').value,
+        document.getElementById('img3').value
+      ];
+
+      const canvas = document.getElementById('thumbCanvas');
+      const ctx = canvas.getContext('2d');
+
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      const width = canvas.width / 3;
+      const height = canvas.height;
+
+      let loadedImages = 0;
+
+      urls.forEach((url, index) => {
+        const img = new Image();
+        img.crossOrigin = "anonymous";
+        img.onload = function () {
+          ctx.drawImage(img, index * width, 0, width, height);
+          loadedImages++;
+          if (loadedImages === 3) {
+            console.log("All images drawn");
+          }
+        }
+        img.onerror = function () {
+          ctx.fillStyle = '#ddd';
+          ctx.fillRect(index * width, 0, width, height);
+          ctx.fillStyle = '#888';
+          ctx.fillText("Image not loaded", index * width + 20, height / 2);
+          loadedImages++;
+        }
+        img.src = url;
+      });
+    }
+
+    function downloadThumbnail() {
+      const canvas = document.getElementById('thumbCanvas');
+      const link = document.createElement('a');
+      link.download = 'thumbnail.jpg';
+      link.href = canvas.toDataURL('image/jpeg');
+      link.click();
+    }
+  </script></body>
 </html>
